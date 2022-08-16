@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopify</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+  <header class="bg-[#fbf7ed] ">
+
+
+    <!-- nav -->
+    <nav class="flex ">
+
+      <div class="md:pl-[50px] pl-[10px] pt-[20px] flex">
+        <img class="w-[150px] h-[40px]" src="https://upload.wikimedia.org/wikipedia/commons/e/e1/Shopify_Logo.png" />
+
+      </div>
+
+      <div class="hidden md:flex md:mr-auto md:ml-4 mt-5 md:py-1 md:pl-4 flex  items-center text-base ">
+        <a class=" text-gray-600 font-[600] hover:text-gray-900 flex">Start
+          <img class="w-[15px] ml-1"
+            src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNzUycHQiIGhlaWdodD0iNzUycHQiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDc1MiA3NTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiA8cGF0aCBkPSJtMTczLjczIDI1OC41My0xNS4yMjMgMTUuMjE5IDIyMi44OCAyMjIuODggMjIyLjg4LTIyMi44OC0xNS4yMjMtMTUuMjE5LTIwNy42NSAyMDcuNjV6Ii8+Cjwvc3ZnPgo=" /></a>
+        <a class="mr-5 ml-5 text-gray-600 font-[600] hover:text-gray-900 flex">Sell
+          <img class="w-[15px] ml-1"
+            src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNzUycHQiIGhlaWdodD0iNzUycHQiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDc1MiA3NTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiA8cGF0aCBkPSJtMTczLjczIDI1OC41My0xNS4yMjMgMTUuMjE5IDIyMi44OCAyMjIuODggMjIyLjg4LTIyMi44OC0xNS4yMjMtMTUuMjE5LTIwNy42NSAyMDcuNjV6Ii8+Cjwvc3ZnPgo=" /></a>
+        <a class="mr-5 ml-5 text-gray-600 font-[600] hover:text-gray-900 flex">Market
+          <img class="w-[15px] ml-1"
+            src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNzUycHQiIGhlaWdodD0iNzUycHQiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDc1MiA3NTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiA8cGF0aCBkPSJtMTczLjczIDI1OC41My0xNS4yMjMgMTUuMjE5IDIyMi44OCAyMjIuODggMjIyLjg4LTIyMi44OC0xNS4yMjMtMTUuMjE5LTIwNy42NSAyMDcuNjV6Ii8+Cjwvc3ZnPgo=" /></a>
+        <a class="mr-5 ml-5 text-gray-600 font-[600] hover:text-gray-900 flex">Manage
+          <img class="w-[15px] ml-1"
+            src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iNzUycHQiIGhlaWdodD0iNzUycHQiIHZlcnNpb249IjEuMSIgdmlld0JveD0iMCAwIDc1MiA3NTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CiA8cGF0aCBkPSJtMTczLjczIDI1OC41My0xNS4yMjMgMTUuMjE5IDIyMi44OCAyMjIuODggMjIyLjg4LTIyMi44OC0xNS4yMjMtMTUuMjE5LTIwNy42NSAyMDcuNjV6Ii8+Cjwvc3ZnPgo=" /></a>
+      </div>
+
+
+
+      <div
+        class=" pr-[10px] md:inline-flex md:mr-auto md:ml-[200px] mt-5 md:py-1 md:pl-[150px] flex flex-wrap items-center text-base justify-center">
+        <a class="mr-5 ml-5 hidden md:inline-block text-gray-600 font-[600] hover:text-gray-900 flex">Pricing
+        </a>
+        <a class="mr-5 ml-5  hidden md:block text-gray-600 font-[600] hover:text-gray-900 flex">Learn
+
+          <a class="mr-5 ml-20 md:ml-5 md:inline-block text-gray-600 font-[600] hover:text-gray-900 flex">Log in
+          </a>
+          <button class="px-5 hidden py-3 md:inline-block text-white font-[700] rounded shadow-md bg-[#008060]">
+            Try for free
+          </button>
+          <div class="space-y-2 flex-none pt-0 md:hidden" id="collapse">
+            <div class="w-7 h-0.5 rounded bg-black"></div>
+            <div class="w-7 h-0.5 rounded bg-black"></div>
+            <div class="w-7 h-0.5 rounded bg-black"></div>
+          </div>
+
+
+      </div>
+    </nav>
+
+    <div class="md:flex p-10 ">
+      <div class="md:w-1/2 md:p-10">
+        <h1 class="text-[#004c3f] md:w-[520px] font-[900] text-[2em] md:text-[3em]">The easiest way to sell online in
+          India</h1>
+        <p class="mt-10 text-[18px] md:text-[22px] text-gray-600">Try one of the most powerful platforms on the market
+          for free. No technical knowledge needed.</p>
+        <input class="  py-3 pr-[75px]  rounded-lg border-[1px] border-green-500 pl-5   md:pr-[170px]"
+          placeholder="Enter your email address">
+        <button
+          class="md:px-5 md:ml-3 mt-3 px-[98px] py-3 md:py-3 md:inline-block text-white font-[700] rounded shadow-md bg-[#008060]">
+          Try for Free
+        </button>
+        <br>
+        <div class="mt-[50px]  ">
+          <span class=" text-[13px]">Try Shopify free for 14 days, no credit card required. By entering your email,
+            you agree to receive marketing emails from Shopify.</span>
+        </div>
+      </div>
+
+
+      <div class="md:w-1/2 mt-10 ml-20 md:mt-0">
+
+        <div id="hero-img"></div>
+        <img class="md:h-[760px]" src="./images/hero.jpeg">
+
+      </div>
+    </div>
+
+
+  </header>
+
+  <!-- bring your buisness online -->
+
+  <div class="md:p-[100px] p-[50px] bg-[#004c3f]">
+    <!-- buisess online heading and explore more -->
+    <h1 class="text-white text-[2em] md:text-[3em]">Bring your business online</h1>
+    <div class="md:flex">
+      <p class="text-[1em] font-[400] mt-5 text-white md:flex">Create an ecommerce website backed by powerful tools that
+        help you find customers, drive sales, and manage your day-to-day.
+
+      </p>
+
+      <div class="mt-5">
+        <a class="mt-5 text-white md:ml-[100px] "> Explore more examples <i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+
+    <div class="md:flex mt-[50px] md:mt-[100px]">
+
+
+      <div class="md:w-1/5 md:ml-5 mt-5 ">
+        <img
+          src="https://cdn.shopify.com/shopifycloud/brochure/assets/merchants/blue-tokai/home-example-small-4144844351e226a9896cffee4bebdaeecb17897116c33a753bfd086b8b621e74.jpg">
+        <p class="text-white mt-2 hover:pointer"> FOOD & DRINK </p>
+        <p class="text-white "> Blue Tokai</p>
+      </div>
+
+      <div class="md:w-1/5 md:ml-5 mt-5 ">
+        <img
+          src="https://cdn.shopify.com/shopifycloud/brochure/assets/merchants/quirksmith/home-example-small-8b1c6b138414b76150e6e00f5143c4301a07b708aa6113dd7096f4340ddfecad.jpg">
+        <p class="text-white mt-2"> JEWELRY</p>
+        <p class="text-white "> Quirksmith</p>
+      </div>
+
+      <div class="md:w-1/5 md:ml-5 mt-5 ">
+        <img
+          src="https://cdn.shopify.com/shopifycloud/brochure/assets/merchants/crossbeats/home-example-small-099933088cbe804543fbb1b0963a5d0a16365e73e6000949b5b0ab2bf4b21503.jpg">
+        <p class="text-white mt-2"> Electronics</p>
+        <p class="text-white "> Crossbeats</p>
+      </div>
+
+      <div class="md:w-1/5 md:ml-5 mt-5 ">
+        <img
+          src="https://cdn.shopify.com/shopifycloud/brochure/assets/merchants/mcaffeine/home-example-small-26afc247af7a3a7b1c9c585a645ccdff26e76156e98be7d9ff0fe9ecd4d3b675.jpg">
+        <p class="text-white mt-2">Beauty</p>
+        <p class="text-white ">Machine</p>
+      </div>
+
+
+      <div class="md:w-1/5 md:ml-5 mt-5 ">
+        <img
+          src="https://cdn.shopify.com/shopifycloud/brochure/assets/merchants/bunaai/home-example-small-4575b175c798e22af5531bae02621396add507433f771db37b1515e9941f8a45.jpg">
+        <p class="text-white mt-2">Fashion</p>
+        <p class="text-white "> Beast</p>
+      </div>
+
+
+    </div>
+    <div class="pt-[50px]">
+      <h1 class="text-white text-[2em] md:text-[2em] mt-10"> Take the best path forward</h1>
+      <div class="md:flex pt-[50px]">
+        <div class="md:w-1/4 p-5">
+          <svg class="icon icon--size-small start-block__icon block__icon" aria-hidden="true" focusable="false">
+            <use xlink:href="#spot-drag-and-drop"></use>
+          </svg>
+          <h1 class="text-white mt-5 text-[20px]"> Start an online business</h1>
+          <p class="text-white mt-2 text-[15px]">Create a business, whether you’ve got a fresh idea or are looking for a
+            new way to make money.</p>
+        </div>
+
+        <div class="md:w-1/4 p-5">
+          <svg class="icon icon--size-small start-block__icon block__icon" aria-hidden="true" focusable="false">
+            <use xlink:href="#spot-online-store"></use>
+          </svg>
+          <h1 class="text-white mt-5 text-[20px]"> Move your business online</h1>
+          <p class="text-white mt-2 text-[15px]">Turn your retail store into an online store and keep serving customers
+            without missing a beat.</p>
+        </div>
+
+
+        <div class="md:w-1/4 p-5">
+          <svg class="icon icon--size-small start-block__icon block__icon" aria-hidden="true" focusable="false">
+            <use xlink:href="#spot-inventory-synced"></use>
+          </svg>
+          <h1 class="text-white mt-5 text-[20px]"> Switch to Shopify</h1>
+          <p class="text-white mt-2 text-[15px]">Bring your business to Shopify, no matter which ecommerce platform
+            you’re currently using.</p>
+        </div>
+
+        <div class="md:w-1/4 p-5">
+          <svg class="icon icon--size-small start-block__icon block__icon" aria-hidden="true" focusable="false">
+            <use xlink:href="#spot-group"></use>
+          </svg>
+          <h1 class="text-white mt-5 text-[20px]"> Hire a Shopify expert</h1>
+          <p class="text-white mt-2 text-[15px]">Get set up with the help of a trusted freelancer or agency from the
+            Shopify Experts Marketplace.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- whereever you ae going section -->
+  <div class="p-[20px]  md:p-[100px] md:text-center ">
+    <h1 class="text-black font-[200] text-3xl md:text-[35px] md:text-center">With you wherever you’re going </h1>
+    <p class="text-gray-600 font-[200] mt-5 md:text-2xl md:w-[1000px] md:pl-[490px] ">One platform with all the
+      ecommerce and point of sale features you need to start, run, and grow your business.</p>
+    <div class="md:flex pt-[50px] md:p-[100px]">
+      <div class="md:w-1/2 md:ml-5 mt-5">
+        <img
+          src="https://cdn.shopify.com/shopifycloud/brochure/assets/merchants/quirksmith/home-example-small-8b1c6b138414b76150e6e00f5143c4301a07b708aa6113dd7096f4340ddfecad.jpg">
+      </div>
+      <div class="md:w-1/2 mt-5 md:p-[50px] md:mt-0">
+        <h1 class="text-black text-left font-[200] text-[25px] md:text-[35px]">Sell everywhere
+        </h1>
+        <p class="text-left mt-5 text-xl text-gray-600">Use one platform to sell products to anyone, anywhere—in person with
+          Point of Sale and online through your website, social media, and online marketplaces.</p>
+        <div class="mt-5 text-left">
+          <a class="mt-5 text-[#008060] font-[700] " id="learn" style="transition: all 0.2s;"> Explore more examples <i
+              class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- market your buisness  -->
+  <div class="md:flex pt-[50px] md:p-[100px]">
+    <div class="md:w-1/2 mt-5 md:pt-[100px]  md:p-[50px] md:mt-0">
+      <h1 class="text-black text-left font-[200] text-2xl md:text-3xl">Market your business
+      </h1>
+      <p class="text-left mt-5 text-xl text-gray-600">Take the guesswork out of marketing with built-in tools that help you
+        create, execute, and analyze digital marketing campaigns.</p>
+      <div class="mt-5 text-left">
+        <a class="mt-5 text-[#008060] font-[700] " id="learn" style="transition: all 0.2s;"> Explore more examples <i
+            class="fas fa-arrow-right"></i></a>
+      </div>
+      
+    </div>
+    <div class="md:w-1/2 md:ml-5 mt-5">
+      <img
+        src="https://cdn.shopify.com/shopifycloud/brochure/assets/home/market-small-084eab2d72b510555838c446501d27dd7380585450efcaaa97453289b2b69c79.jpg">
+    </div>
+    </div>
+
+    <!-- manage everything section -->
+
+    <div class="p-[20px]  md:p-[100px] md:text-center ">
+
+      <div class="md:flex pt-[50px] md:p-[100px]">
+        <div class="md:w-1/2 md:ml-5 mt-5">
+          <img
+            src="./images/card.png">
+        </div>
+        <div class="md:w-1/2 mt-5 md:p-[50px] md:mt-0">
+          <h1 class="text-black text-left font-[200] text-xl md:text-3xl">Manage everything
+          </h1>
+          <p class="text-left mt-5 text-xl text-gray-600">Use one platform to sell products to anyone, anywhere—in person with
+            Point of Sale and online through your website, social media, and online marketplaces.</p>
+          <div class="mt-5 text-left">
+            <a class="mt-5 text-[#008060] font-[700] " id="learn" style="transition: all 0.2s;"> Explore more examples <i
+                class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- explore more shopify -->
+    <div class="p-[30px] md:p-[100px] bg-[#f3fcf4]">
+      <h1 class="text-xl text-[25px] md:text-4xl">Explore more from Shopify in India</h1>
+      <div class=" md:bg-white  mt-5 md:flex">
+        <div class="md:w-1/2 md:p-[50px] md:pt-[90px]">
+          <h1 class="font-[700] text-2xl">START</h1>
+          <h1 class="text-[#004c3f] mt-5 text-[20px] md:text-[25px]">Launch your store with the help of a Shopify Expert
+          </h1>
+          <p class="mt-5 text-gray-600 text-xl">Find hundreds of experts from India ready to help you get your store up and
+            running, from choosing a theme to building a fully customized site.</p>
+          <div class="mt-5 text-left">
+            <a class="mt-5 text-[#008060] font-[700] " id="learn" style="transition: all 0.2s;"> Explore more examples <i
+                class="fas fa-arrow-right"></i></a>
+          </div>
+      </div>
+        <div class="md:w-1/2">
+        <img src="https://cdn.shopify.com/shopifycloud/brochure/assets/home/card-collection/india-experts-small-432c16e7cd8ec09f3ae3aca42c58775001d5dc511e70608476ed7ee0e2d2e2c5.jpg" alt="" class="src">
+        </div>
+    </div>
+    </div>
+
+    <!-- alice souza section -->
+
+    <div class="md:p-[150px] p-[200px] md:pt-0 md:flex">
+      <div class="md:w-1/2">
+  
+        <img
+          src="https://cdn.shopify.com/shopifycloud/brochure/assets/merchants/alicia-souza/alicia-souza-testimonial@desktop-d947199e09069edaf78e332d87ba932b45805e3c91d032ba8a083a6f67ad04b5.jpg">
+      </div>
+      <div class="md:w-1/2 bg-[#002e25]  p-10 md:p-[40px] text-white text-center  ">
+  
+        <h1 class=" text-[20px] md:text-[30px] text-center">“Shopify was my knight in shining armor when I exhausted every
+          other possibility of getting my online store up and running. It was stunningly easy to use, with more features
+          and plug-ins that I didn’t even know I wanted.”</h1>
+  
+        <img alt="" data-sizes="100vw" class="mx-auto mt-10"
+          data-srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/home/testimonials/logo-alicia-souza-small-4ac1bd956b9bf4d8fd78b6597f24ba9379714861042d3a199065b704a11657e6.png 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/home/testimonials/logo-alicia-souza-large-140eb3cca92ad104d99d48e364aa08b2caaec5501922eeb3916546718de63152.png?quality=50 2x"
+          class=" ls-is-cached lazyloaded" sizes="100vw"
+          srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/home/testimonials/logo-alicia-souza-small-4ac1bd956b9bf4d8fd78b6597f24ba9379714861042d3a199065b704a11657e6.png 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/home/testimonials/logo-alicia-souza-large-140eb3cca92ad104d99d48e364aa08b2caaec5501922eeb3916546718de63152.png?quality=50 2x">
+        <p class="mt-5 text-[1.25em]">Alicia | Alicia Souza</p>
+      </div>
+  
+    </div>
+
+
+    <div class="md:p-[150px] p-[20px] md:pt-0 md:flex">
+      <div class="md:w-1/6 ">
+        <img class="image logo-soup__image lazyloaded mx-auto" alt="Bajaao" data-sizes="100vw"
+          data-srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/bajaao-small-6ca0459c2a2fc6a57654d85cd1f053828d7fee97ecf7ff6dd8a1c460d0a5d344.png"
+          sizes="100vw"
+          srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/bajaao-small-6ca0459c2a2fc6a57654d85cd1f053828d7fee97ecf7ff6dd8a1c460d0a5d344.png 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/bajaao-large-90b80d8dca23c6010844c15073c5682e366e2a7cce83c3906023254ddc0f118f.png?quality=50 2x">
+      </div>
+      <div class="md:w-1/6">
+        <img class="image logo-soup__image lazyloaded mx-auto mt-10 md:mt-0" alt="John Jacobs" data-sizes="100vw"
+          data-srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/johnjacobs-small-79aa379de8a1c0d6df1c33af8c63a677871164315ccbc495423aeaead650d53a.png 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/johnjacobs-large-64648953616375e0c0cdf42f66d2dac5d5d42c1fd73c36479bbfadde18215515.png?quality=50 2x"
+          sizes="100vw"
+          srcset="https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/johnjacobs-small-79aa379de8a1c0d6df1c33af8c63a677871164315ccbc495423aeaead650d53a.png 1x, https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/johnjacobs-large-64648953616375e0c0cdf42f66d2dac5d5d42c1fd73c36479bbfadde18215515.png?quality=50 2x">
+      </div>
+      <div class="md:w-1/6">
+        <img class="mx-auto mt-10 md:mt-0"
+          src="https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/kylie-small-4e25b192755f809e9795d9f3722f3fa6b46da1fdc2a48b3ec8b6311f50f83ac7.png">
+      </div>
+      <div class="md:w-1/6">
+        <img class="mx-auto mt-10 md:mt-0"
+          src="https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/nush-small-04d75ec8d5b3e20b6e227006c23759c8b65efd482808aff0fc17140c5efb36cc.png">
+      </div>
+      <div class="md:w-1/6">
+        <img class="mx-auto mt-10 md:mt-0"
+          src="https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/yogabar-small-a41c8bbe605289256552b537eb1bbf993845442c3af43ff4f8f1ed932a7b3609.png">
+      </div>
+      <div class="md:w-1/6">
+        <img class="mx-auto mt-10 md:mt-0"
+          src="https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/starstruck-small-6d49ff528f3ef3217015f906a1ece473e2559688669d00e2b88e7be4f65ce3bf.png">
+      </div>
+      <div class="md:w-1/6">
+        <img class="mx-auto mt-10 md:mt-0"
+          src="https://cdn.shopify.com/shopifycloud/brochure/assets/logo-soup/mcaffeine-small-0c55170838a60e6a490dac7732d44f988f754de89d790de26b0d8e50a01029b4.png">
+      </div>
+    </div>
+</body>
+
+</html>
