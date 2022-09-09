@@ -1,6 +1,6 @@
 ![badge](https://img.shields.io/badge/html%2Fcss-used-brightgreen)
 
-# My  Tailwind Paytm Clone
+# My  Tailwind Shopify Clone
 
 - This project is a  SHopify clone page.This website is designed using pure Tailwind.
 
